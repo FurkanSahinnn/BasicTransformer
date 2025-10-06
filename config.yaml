@@ -1,0 +1,27 @@
+# config.yaml
+model:
+  vocab_size: 50000
+  d_model: 512
+  n_heads: 8
+  n_layers: 6
+  d_ff: 2048
+  max_seq_length: 512
+  dropout: 0.1
+
+training:
+  batch_size: 32
+  learning_rate: 0.0001
+  epochs: 100
+  context_length: 128
+  stride: 64
+
+test_parameters:
+  context_length: 4
+  stride: 2
+  batch_size: 2
+
+test_texts:
+  english_long: "Artificial intelligence has rapidly evolved over the past decade, influencing almost every aspect of modern life. From healthcare to finance, AI systems are now capable of analyzing complex data, recognizing patterns, and making decisions faster than ever before. Deep learning models, especially transformers, have revolutionized natural language processing by enabling machines to understand human language more effectively. However, the success of these models largely depends on high-quality data and proper training techniques. As researchers continue to refine architectures and optimization strategies, the boundary between human and machine intelligence becomes increasingly blurred."
+  english_short: "Artificial intelligence has rapidly evolved over the past decade, influencing almost every aspect of modern life."
+  turkish_long: "Yapay zeka, geçen on yılda hızla gelişmiş ve modern yaşamın her alanını etkilemiştir. Sağlık ve finans gibi alanlarda, AI sistemleri artık karmaşık verileri analiz edebilir, desenleri algılayabilir ve daha önce hiç olmadığı kadar hızlı kararlar alabilir. Derin öğrenme modelleri, özellikle transformer'lar, makinelere insan dilini daha etkili bir şekilde anlamalarını sağlamıştır. Ancak bu modellerin başarısı büyük ölçüde yüksek kaliteli veri ve uygun eğitim tekniklerine bağlıdır. Araştırmacılar, mimari ve optimizasyon stratejilerini geliştirmeye devam ederken, insan ve makine zekası arasındaki sınır giderek belirsizleşmektedir."
+  turkish_short: "Yapay zeka, geçen on yılda hızla gelişmiş ve modern yaşamın her alanını etkilemiştir."
