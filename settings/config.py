@@ -1,5 +1,5 @@
 import yaml
-from settings import Model, Training, TestParameters, TestTexts
+from settings.settings import Model, Training, TestParameters, TestTexts
 
 class AppConfig:
     model: Model

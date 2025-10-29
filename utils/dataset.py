@@ -48,7 +48,7 @@ def create_dataloader(dataset: TextDataset, batch_size: int, shuffle: bool = Tru
     
 if __name__ == "__main__":
     from tokenizer import Tokenizer
-    from config import app_config
+    from settings.config import app_config
     
     text = app_config.get_test_texts()["english_long"]
     
